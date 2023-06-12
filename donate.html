@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url(photos/donation.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4><a href="index.html" class="brand">CURE<span class="orange">CANCER</span></a></h4>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="donate.html">Donate</a>
+                <a href="about.html">About</a>
+                <a href="card.html">Patients</a>
+                <a href="#">Help</a>
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+    <form>
+        <h1 style="color: #e97932; margin-left: 150px;">Donation Page</h1>
+        <div class="containers">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Country</label>
+                <select id="country" name="currency" class="donatedropdown" style="border-radius: 3%; border:5px solid #e97932 ; font-size: larger;">
+                    <option class="donatedropdown" id="dropcurrency" value="United States">United States</option>
+                    <option class="donatedropdown" id="dropcurrency" value="United Kingdom">United Kingdom</option>
+                    <option class="donatedropdown" id="dropcurrency" value="Canada">Canada</option>
+                    <option class="donatedropdown" id="dropcurrency" value="Australia">Australia</option>
+                    <option class="donatedropdown" id="dropcurrency" value="Germany">Germany</option>
+                    <option class="donatedropdown" id="dropcurrency" value="India">India</option>
+                    <option class="donatedropdown" id="dropcurrency" value="China">China</option>
+                    <option class="donatedropdown" id="dropcurrency" value="Brazil">Brazil</option>
+                    <option class="donatedropdown" id="dropcurrency" value="France">France</option>
+                    <option class="donatedropdown" id="dropcurrency" value="Japan">Japan</option>
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                <label for="exampleFormControlInput1" class="form-label">Select Payment method </label>
+                <a href=""><img style="margin-left: 100px; width: 45px;height: 30px;" src="photos/card.webp"></a>
+                        <a href=""><img style="margin-left: 10px; width: 45px;height: 30px;" src="photos/upi.png"></a>
+                        <a href="https://www.paypal.com/in/home"><img style="margin-left: 10px;width: 45px;height: 30px;" src="photos/PayPal.webp"></a>
+                        <a href="https://paytm.com/"><img style="margin-left: 10px;width: 45px;height: 30px;" src="photos/paytm.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Any Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn" onclick="btnclick()"
+                    style="background-color: #e97932; color: white;margin-right: 20px;margin-bottom: 10px;">Donate</button>
+                <a href="card.html" style="color: #e97932; background-color: white;">Patient list</a>
+            </div>
+        </div>
+    </form>
+    <script>
+        function btnclick() {
+            alert("THANK U FOR UR KIND DONATION!");
+        }
+    </script>
+</body>
+
+</html>
