@@ -9,31 +9,31 @@
     {
         "id": 2,
         "title": "John Anderson",
-        "text": "John has been diagnosed with stage IV lung cancer. Despite undergoing chemotherapy, the cancer has spread to other organs. He is currently exploring clinical trials and targeted therapies as potential treatment options.",
+        "text": "John has been diagnosed with stage IV lung cancer.  He is currently exploring clinical trials and targeted therapies as potential treatment options.",
         "images": "photos/p1.jpeg"
     },
     {
         "id": 3,
         "title": " Emily Ramirez",
-        "text": "Emily was diagnosed with stage III colon cancer. She recently underwent surgery to remove the tumor, followed by chemotherapy. Her medical team is closely monitoring her progress to determine the effectiveness of the treatment.",
+        "text": "Emily was diagnosed with stage III colon cancer. Her medical team is closely monitoring her progress to determine the effectiveness of the treatment.",
         "images": "photos/p2.jpeg"
     },
     {
         "id": 4,
         "title": "Michael Patel",
-        "text": " Michael has been diagnosed with stage I prostate cancer. He has opted for active surveillance, which involves regular check-ups and monitoring of his PSA levels to track the progression of the cancer and determine if further treatment is necessary.",
+        "text": " Michael has been diagnosed with stage I prostate cancer. He has opted for active regular check-ups and monitoring of his progression of the cancer .",
         "images": "photos/p3.jpg"
     },
     {
         "id": 5,
         "title": " Laura Wilson",
-        "text": " Laura has been diagnosed with stage III ovarian cancer. She recently completed surgery to remove the tumor, followed by chemotherapy. Her treatment plan also includes targeted therapy to specifically target cancer cells and minimize side effects.",
+        "text": " Laura has been diagnosed with stage III ovarian cancer. Her treatment plan also includes targeted therapy to specifically target cancer cells and minimize side effects.",
         "images": "photos/p4.jpg"
     },
     {
         "id": 6,
         "title": "David Thompson",
-        "text": "David has been diagnosed with stage IV pancreatic cancer. He is currently receiving palliative care to manage his symptoms and improve his quality of life. The medical team is providing support to David and his family to ensure his comfort and well-being.",
+        "text": "David has been diagnosed with stage IV pancreatic cancer. The medical team is providing support to David and his family to ensure his comfort and well-being.",
         "images": "photos/p5.jpg"
     }
 ]

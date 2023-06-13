@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background: url(photos/login.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4><a href="index.html" class="brand">CURE<span class="orange">CANCER</span></a></h4>
+        <div class="menu-btn">
+        </div>
+        
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="donate.html">Donate</a>
+                <a href="about.html">About</a>
+                <a href="card.html">Patients</a>
+                <a href="askdonation.html">Ask For Donation</a>
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+    <form>
+        <h1 style= "color: #e97932; margin-left: 150px;">Donation Form</h1>
+        <div class="containes">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Patient Full Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Age</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Gender</label>
+            <select id="gender" class="donatedropdown" name="gender" style="border-radius: 5px; border:5px solid #e97932 ; font-size: larger;">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Type of Cancer</label>
+                <select id="country" name="currency" class="donatedropdown" style="border-radius: 5px; border:5px solid #e97932 ; font-size: larger;">
+                    <option class="donatedropdown" id="dropcurrency" >Colorectal Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Lung Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Breast Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Prostate Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Skin Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Bladder Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Leukemia</option>
+                    <option class="donatedropdown" id="dropcurrency" >Lymphoma</option>
+                    <option class="donatedropdown" id="dropcurrency" >Pancreatic Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Ovarian Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Brain Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Kidney Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Liver Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Esophageal Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" >Cervical Cancer</option>
+                    <option class="donatedropdown" id="dropcurrency" value="other" >IF other please Specify</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Upload Patient Report</label>
+            <input type="file" id="document" name="document" style="color: #e97932 ;margin-left: 20px; cursor: pointer;">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">All details filled are correct</label>
+        </div>
+        <button type="submit" class="btn my-3" style="width: 75px; background-color: #e97932;color: white;" onclick="btnsbmit()">Submit</button>
+    </div>
+      </form>
+      <script>
+        function btnsbmit(){
+            alert("Submit")
+        }
+    </script>
+</body>
+</html>
