@@ -1,0 +1,21 @@
+[
+      {
+        "name": "Monthly",
+        "description": "Subscribe to a monthly donation plan at CureCancer and provide ongoing support for cancer patients.",
+        "amount": "$5",
+        "time": "month"
+      },
+      {
+        "name": "Yearly",
+        "description": "Subscribe to a yearly donation plan at CureCancer and make a lasting impact on cancer patients.",
+        "amount": "$50",
+        "time": "year"
+      }
+    ]
+  
+  
+  
+  
+  
+  
+  

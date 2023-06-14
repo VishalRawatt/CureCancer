@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background: url(photos/subs.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4><a href="index.html" class="brand">CURE<span class="orange">CANCER</span></a></h4>
+        <div class="menu-btn">
+        </div>
+
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="donate.html">Donate</a>
+                <a href="about.html">About</a>
+                <a href="card.html">Patients</a>
+                <a href="askdonation.html">Ask For Donation</a>
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+    <div class="subscription" style="margin-top: 100px;">
+        <div class="row">
+        </div>
+    </div>
+    <script>
+        fetch("Subs.json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (subs) {
+                let data = document.querySelector(".row");
+                let out = "";
+                for (let sub of subs) {
+                    out += `
+<div class="subcard col-4">
+    <div class="subcards">
+<h1>${sub.name}</h1>
+</div>
+<p class="card-text" style="margin:20px 20px">${sub.description}</p>
+<h3>Subscription - ${sub.amount}/${sub.time}</h3>
+<button class="btn btn-primary" style=" margin-left: 200px; margin-top: 50px" >Donate</button>
+</div>
+    `
+                }
+                data.innerHTML = out
+            })
+    </script>
+</body>
+
+</html>

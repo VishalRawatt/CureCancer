@@ -269,6 +269,38 @@ form {
     border-radius: 5%;
 }
 
+.subcard{
+    width:350px !important;
+    height:500px;
+    margin-left: 250px !important;
+    margin: 100px 150px;
+    background-color: white;
+    z-index: 0;
+}
+.subcard h1{
+    z-index: 10;
+    margin: 0 !important;
+    font-size: 40px;
+    color: #0087ff;
+    font-family: auto;
+    
+}
+.subcard p{
+    font-size: 25px;
+}
+.subcards {
+    margin-left: -13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f3ff;
+    width: 350px;
+    height:150px;
+
+}
+.subcards h1{
+    margin-left: 200px;
+}
 .donatehref {
     display: flex;
     background-color: #e97923;
@@ -277,7 +309,7 @@ form {
     height: 30px;
     border-radius: 7%;
     justify-content: center;
-    margin-left: 110px;
+    margin-left: 50px;
 }
 
 @media (max-width: 1040px) {
