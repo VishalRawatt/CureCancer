@@ -1,15 +1,21 @@
 [
       {
         "name": "Monthly",
-        "description": "Subscribe to a monthly donation plan at CureCancer and provide ongoing support for cancer patients.",
+        "duration": "Time period = 1 Month",
+        "gold":"Gold Member",
+        "appoint":"Health Benifits",
+        "details":"No Access to patients report",
         "amount": "$5",
-        "time": "month"
+        "time": "Month"
       },
       {
         "name": "Yearly",
-        "description": "Subscribe to a yearly donation plan at CureCancer and make a lasting impact on cancer patients.",
-        "amount": "$50",
-        "time": "year"
+        "duration": "Time period = 1 Year",
+        "gold":"Premium Member",
+        "appoint":"Health Benifits",
+        "details":"Access to patients report",
+        "amount": "$100",
+        "time": "Year"
       }
     ]
   

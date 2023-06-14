@@ -52,11 +52,16 @@
                     out += `
 <div class="subcard col-4">
     <div class="subcards">
-<h1>${sub.name}</h1>
-</div>
-<p class="card-text" style="margin:20px 20px">${sub.description}</p>
-<h3>Subscription - ${sub.amount}/${sub.time}</h3>
-<button class="btn btn-primary" style=" margin-left: 200px; margin-top: 50px" >Donate</button>
+        <h1 class="text-center">${sub.name}<br>Subscription</h1>
+    </div>
+    <div class="substable">
+        <p>${sub.duration}</p>
+        <p>${sub.gold} </p>
+        <p>${sub.appoint}</p>
+        <p>${sub.details}</p>
+        <p>${sub.amount}/${sub.time}</p>
+    </div>
+    <button class="btn btn-primary" style=" margin-left: 120px; margin-top: 50px" >Donate</button>
 </div>
     `
                 }
