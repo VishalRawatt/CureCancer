@@ -71,10 +71,11 @@
                     <option class="donatedropdown" id="dropcurrency" >Cervical Cancer</option>
                     <option class="donatedropdown" id="dropcurrency" value="other" >IF other please Specify</option>
                 </select>
+                <input type="hidden" id="otherbox"></input>
           </div>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Upload Patient Report</label>
-            <input type="file" id="document" name="document" style="color: #e97932 ;margin-left: 20px; cursor: pointer;">
+            <input type="file" id="document" name="document"  accept=".pdfg" style="color: #e97932 ;margin-left: 20px; cursor: pointer;">
           </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -84,8 +85,23 @@
     </div>
       </form>
       <script>
+        let a = document.getElementById("country");
+        console.log(a.value);
+        a.addEventListener("change", function() {
+          console.log(a.value);
+          if (a.value === "other"){
+            let b = document.getElementById("otherbox");
+            b.setAttribute("type", "text");
+          }
+          else{
+                      let b = document.getElementById("otherbox");
+                      b.setAttribute("type", "hidden");
+                    }
+          }
+      
+        );
         function btnsbmit(){
-            alert("Submit")
+            alert("Submitted")
         }
     </script>
 </body>

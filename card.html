@@ -11,7 +11,8 @@
   <style>
       body {
         padding: 0;
-        background-color: #e97923;
+        background : url(photos/card.jpg);
+        background-size: cover;
       }
     </style>
 </head>
@@ -47,7 +48,7 @@
       out += `
 <div class="card-body col-md-3">
 <img src="${kid.images}" style= "width: 300px; height: 250px; margin:20px 45px; border-radius:3%;" class="card-img-top" alt="...">
-<div class=" cbody" style="margin-left:20px">
+<div class= "cbody" style="margin-left:20px">
 <h5 class="card-title text-center">${kid.title}</h5>
 <p class="card-text" style="margin:20px 20px">${kid.text}</p>
 <a href="donate.html" class="donatehref" style="text-decoration: none">Donate</a>
