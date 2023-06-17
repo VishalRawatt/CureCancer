@@ -40,22 +40,22 @@
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <label for="inputPassword6" class="col-form-label">Password</label>
-                </div>
-            </div>
-            <div class="row g-3 align-items-center">
-                <div class="col-auto">
-                  <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline" style="width: 400px;">
-                </div>
-                <div class="col-auto">
-                  <span id="passwordHelpInline">
-                    <button type="button" onclick=handleshow()><i class="fa-solid fa-eye"></i></button>
-                  </span>
-        </div>
-        </div>
-        </div>
+          <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Password</label>
+              </div>
+          </div>
+          <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline" style="width: 400px;">
+              </div>
+              <div class="col-auto">
+                <span id="passwordHelpInline">
+                  <button type="button" onclick=handleshow() style="border: none; background-color: transparent;"><i class="fa-solid fa-eye-slash" id="newone"></i></button>
+                </span>
+      </div>
+      </div>
+      </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -67,11 +67,14 @@
       <script>
         function handleshow() {
             a = document.getElementById("inputPassword6");
+            b= document.getElementById("newone");
             if (a.getAttribute("type") == "text") {
                 a.setAttribute("type", "password");
+                b.setAttribute("class", "fa-solid fa-eye-slash");
         }
         else if (a.getAttribute("type") == "password") {
             a.setAttribute("type", "text");
+            b.setAttribute("class", "fa-solid fa-eye");
         }
     }
     </script>
